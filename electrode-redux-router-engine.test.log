@@ -1,0 +1,66 @@
+Invoking: clap test-only 
+[00:39:30] @xarc/run version 1.1.1 at /Users/s0s0p6u/Desktop/GTP/electrode/common/temp/node_modules/.pnpm/@xarc+run@1.1.1/node_modules/@xarc/run
+[00:39:30] node.js version v16.19.1 at /Users/s0s0p6u/nvm/nodejs/v16.19.1/bin/node
+[00:39:30] CWD is /Users/s0s0p6u/Desktop/GTP/electrode/packages/electrode-redux-router-engine
+[00:39:31] Loaded ./xclap.js
+[00:39:31] PATH already contains ./node_modules/.bin
+[00:39:31] Execute electrode/test-only as function
+[00:39:31] -Execute electrode/.test-only mocha -c test/spec
+
+
+  electrode server (Hapi) integration
+(node:55049) [DEP0066] DeprecationWarning: OutgoingMessage.prototype._headers is deprecated
+(Use `node --trace-deprecation ...` to show where the warning was created)
+    ✓ should render basic test route (160ms)
+    ✓ should render with URL query (39ms)
+    ✓ should render static with streaming
+    ✓ should render with ids and streaming
+
+  redux-router-engine
+    ✓ should return 404 for unknown index route
+    ✓ should return string error
+    ✓ should return Error error
+    ✓ should handle a Promise returned from renderToString
+    ✓ should resolve index route
+    ✓ should parse req.path if req.url is missing
+    ✓ should use options.location
+    - should load init without leading . from node_modules
+    ✓ should use top reducer exclusively if it's a function
+    ✓ should take routes as name of module
+    ✓ should resolve skip SSR if disabled
+    ✓ escapes troublesome characters in the state
+    ✓ should return 302 for router Redirect component
+    ✓ should return 500 for invalid component
+    ✓ should return 404 if component throws 404
+    ✓ Ensure engine renders page when withIds is requested
+    ✓ should fail if path doesn't start with basename
+    ✓ should render Link with no basename
+    ✓ should render Link with basename
+    ✓ should not populate react-id by default
+    ✓ should use optional callbacks to stringify preload state
+    ✓ should use optional logError
+    ✓ Ensure engine renders page when withIds construction option is overridden
+    ✓ should return 500 for method not allowed
+    ✓ should return 200 for allowed method
+    ✓ should load custom handler using path
+    ✓ should allow top init to awaitInits on multiple matching child routes
+    ✓ should load init by path if init is true
+    ✓ should load init by path if init is true and url is string
+    ✓ should load init by path if init is true and url is hapi@18 WHATWG url format
+    ✓ should have state preloaded after rendering
+
+  util
+    ✓ es6Default should return default
+    ✓ es6Default should return mod if no default
+    ✓ resolveModulePath should resolve leading . paths
+    ✓ resolveModulePath should not resolve paths w/o leading .
+    ✓ getTargetByQuery should get default target from request query string
+    ✓ getTargetByQuery should get target if query __dist refer to existing target bundle
+    ✓ getEnvTargets should get an array of all babel env targets
+
+
+  41 passing (456ms)
+  1 pending
+
+[00:39:48] >Done Execute electrode/.test-only mocha -c test/spec (17.19 sec)
+[00:39:48] Done Execute electrode/test-only as function (17.19 sec)
